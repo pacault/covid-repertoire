@@ -1,5 +1,7 @@
 # Code for iScience manuscript ISCIENCE-D-22-03671R1 manuscript
 
+## changeoToClonotypes
+
 `changeoToClonotypes.py` : script to convert the changeO clonotype format file to our clonotype format file
 
 Options :
@@ -7,6 +9,8 @@ Options :
 - `-i` `--input` str. output of the changeo DefineClones.py command
 - `-o` `--out` str. output file name
 
+
+## findcovabdab
 
 `findcovabdab.py`: find clonotypes shared between oru repertoires and the Covabdab database
 
@@ -19,6 +23,8 @@ Patient_RNA AA01 patient01 J7 /path/to/patient01/imgtdir/
 Control_DNA cc01 Control01 NA /path/to/control01/imgtdir/
 ```
 
+## write_clonotypes
+
 `write_clonotypes.py`: search commons clonotypes between our repertoires, and write a file with all the clonotypes.
 
 - `-d` `--max-dif` int. Minimum mismatch for 10 aa allowed between 2 clonotypes. Default : 1
@@ -30,6 +36,8 @@ Examples:
 Patient_RNA AA01 patient01 J7 /path/to/patient01/imgtdir/
 Control_DNA cc01 Control01 NA /path/to/control01/imgt_dir/
 ```
+
+## heatmap_ms
 
 `heatmap_ms.R` : R script to plot the VJ heatmap for ARDS/HV cohorts
 
@@ -49,6 +57,8 @@ output:
 
 Repertoire_<ADN|ARN>_<cond1_vs_cond2>_<allData>_heatmap.pdf
 Repertoire_<ADN|ARN>_<cond1_vs_cond2>_<allData>_Top.xlsx
+
+## covab_ms
 
 `covab_ms.R` : extract covabad human sequences from input file and get occurences
 
